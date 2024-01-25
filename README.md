@@ -25,7 +25,7 @@ The GUI enables registering two 2D blockedImages using manual control points. Fi
 **Recommended workflow:**
 1. Ensure both inputs have sufficient levels to enable quick
   viewing. Ideally, the coarsest level is at most the size of the
-  screen. Use makeMultiLevel2D to add levels if they don't already
+  screen. Use [makeMultiLevel2D](https://www.mathworks.com/help/images/ref/blockedimage.makemultilevel2d.html) to add levels if they don't already
   exist.
 2. Use keyboard shortcuts to toggle (t key) between the moving (1
   or m key) or fixed (2 or f key) image.
