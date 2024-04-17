@@ -9,6 +9,8 @@ A MATLAB&reg; Graphical User Interface for registering large whole slide images 
 Requires MATLAB&reg; release R2023b or newer
 - [Image Processing Toolbox &trade;](https://www.mathworks.com/products/image.html)
 
+![figure_0.png](images/AppScreenShot.png)
+
 ## Getting Started 
 The [blockedImage](https://www.mathworks.com/help/images/large-image-files.html) object can be used to handle large (Multi GB, larger than available RAM) images like WSI data. It can efficiently stream data in smaller blocks which will fit in RAM, and associated visualization functions will also selectively load appropriate resolutions of the data. WSI is typically stored in multi-resolution TIFF files that can be loaded in directly using the blockedImage constructor. 
 For example, if the following two files existed, they would be loaded using:
@@ -58,8 +60,20 @@ The GUI enables registering two 2D blockedImages using manual control points. Fi
   [blockedImage/write](https://www.mathworks.com/help/images/ref/blockedimage.write.html) for more details.
 
 See also: [blockedImage](https://www.mathworks.com/help/images/large-image-files.html), [makeMultiLevel2D](https://www.mathworks.com/help/images/ref/blockedimage.makemultilevel2d.html) 
-    
-![figure_0.png](images/AppScreenShot.png)
+
+## Screenshots    
+
+Rough affine transformation
+
+![figure_2.gif](images/aff1.gif)
+
+Refine affine transformation
+
+![figure_3.gif](images/aff2.gif)
+
+Add deformable points, with 'impact circle' tweaks
+
+![figure_4.gif](images/def1.gif)
 
 ## License
 The license is available in the License.txt file in this GitHub repository.
